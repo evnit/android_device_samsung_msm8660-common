@@ -22,7 +22,7 @@ TARGET_BOARD_PLATFORM := msm8660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 
 # Architecture
-TARGET_CPU_VARIANT := cortex-a8
+TARGET_CPU_VARIANT := scorpion
 
 # Audio
 BOARD_HAVE_SAMSUNG_AUDIO := true
@@ -79,6 +79,9 @@ TARGET_RECOVERY_FSTAB := device/samsung/msm8660-common/rootdir/etc/fstab.qcom
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/msm8660-common
+
+# RIL
+BOARD_RIL_CLASS := ../../../device/samsung/msm8660-common/ril
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
