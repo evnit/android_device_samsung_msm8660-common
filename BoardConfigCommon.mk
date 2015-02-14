@@ -91,7 +91,7 @@ TARGET_USES_QCOM_BSP := true
 TARGET_RECOVERY_FSTAB := device/samsung/msm8660-common/rootdir/etc/fstab.qcom
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/msm8660-common/ril
+# BOARD_RIL_CLASS := ../../../device/samsung/msm8660-common/ril
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
