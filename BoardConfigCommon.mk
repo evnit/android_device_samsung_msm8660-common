@@ -84,6 +84,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/msm8660-common
 BOARD_RIL_CLASS := ../../../device/samsung/msm8660-common/ril
 
 # SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
 BOARD_SEPOLICY_DIRS += \
     device/samsung/msm8660-common/sepolicy
 
@@ -94,18 +96,13 @@ BOARD_SEPOLICY_UNION += \
     domain.te \
     drmserver.te \
     file_contexts \
-    files \
-    file.te \
-    hci_init.te \
     healthd.te \
     init.te \
     init_shell.te \
-    keystore.te \
-    kickstart.te \
     mediaserver.te \
     rild.te \
     surfaceflinger.te \
-    system.te \
+    system_app.te \
     ueventd.te \
     untrusted_app.te \
     vold.te \
