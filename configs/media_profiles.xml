@@ -155,7 +155,7 @@
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
-    
+
     <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="20000000"
@@ -246,7 +246,7 @@
              sampleRate="48000"
              channels="1" />
     </EncoderProfile>
-    
+
     <EncoderProfile quality="timelapse1080p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="20000000"
