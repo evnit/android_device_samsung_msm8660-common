@@ -178,7 +178,7 @@ PRODUCT_BOOT_JARS += \
 
 # Package generation
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/test_radio_version.sh:/system/etc/test_radio_version.sh
+    $(LOCAL_PATH)/test_radio_version.sh:/system/test_radio_version.sh
 
 # Power HAL
 PRODUCT_PACKAGES += \
