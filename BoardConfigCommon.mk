@@ -13,7 +13,6 @@
 # limitations under the License.
 # inherit from qcom-common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm8660-common/include
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
@@ -83,23 +82,24 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
 device/samsung/msm8660-common/sepolicy
 BOARD_SEPOLICY_UNION += \
-    app.te \
-    bluetooth.te \
-    device.te \
-    domain.te \
-    drmserver.te \
-    file_contexts \
-    healthd.te \
-    init.te \
-    init_shell.te \
-    mediaserver.te \
-    mpdecision.te \
-    rild.te \
-    surfaceflinger.te \
-    system_app.te \
-    ueventd.te \
-    untrusted_app.te \
-    vold.te
+ app.te \
+bluetooth.te \
+device.te \
+domain.te \
+drmserver.te \
+file_contexts \
+healthd.te \
+init.te \
+init_shell.te \
+mediaserver.te \
+rild.te \
+surfaceflinger.te \
+system_app.te \
+ueventd.te \
+untrusted_app.te \
+vold.te \
+wpa.te \
+wpa_socket.te
 # Wifi related defines
 BOARD_HAVE_SAMSUNG_WIFI := true
 BOARD_WLAN_DEVICE := bcmdhd
