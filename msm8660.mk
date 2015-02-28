@@ -176,10 +176,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     qcmediaplayer
 
-# Package generation
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/test_radio_version.sh:/system/test_radio_version.sh
-
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm8660
@@ -212,7 +208,3 @@ PRODUCT_COPY_FILES += \
 
 # Common Qualcomm hardware
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
-
-# MPDecision
-PRODUCT_COPY_FILES += \
-	device/samsung/msm8660-common/01mpdecision:system/etc/init.d/01mpdecision
