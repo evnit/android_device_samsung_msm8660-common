@@ -68,6 +68,8 @@ TARGET_USES_CM_POWERHAL := true
 # Qualcomm support
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 TARGET_USES_QCOM_BSP := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+
 # Recovery
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/msm8660-common/recovery/graphics.c
 TARGET_RECOVERY_FSTAB := device/samsung/msm8660-common/rootdir/etc/fstab.qcom
@@ -100,7 +102,7 @@ wpa.te \
 wpa_socket.te
 # Wifi related defines
 BOARD_HAVE_SAMSUNG_WIFI := true
-BOARD_NO_WIFI_HAL := true
+BOARD_NO_WIFI_HAL	:= true
 BOARD_WLAN_DEVICE := bcmdhd
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_${BOARD_WLAN_DEVICE}
