@@ -25,7 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import init.target.rc
 import init.qcom.usb.rc
 
 on init
@@ -395,10 +394,10 @@ service quipc_main /system/bin/quipc_main
     group net_admin wifi inet gps
     disabled
 
-service fm_dl /system/bin/setprop hw.fm.init 1
+service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     class late_start
     user root
-    group system fm_radio
+    group system qcom_oncrpc
     disabled
     oneshot
 

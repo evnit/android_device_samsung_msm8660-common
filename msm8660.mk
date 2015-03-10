@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     audio_policy.conf \
     audio.primary.msm8660 \
     audio_policy.msm8660 \
+    audio.r_submix.default \
     libaudio-resampler \
     libaudioutils
 
